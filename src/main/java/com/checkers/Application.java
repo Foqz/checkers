@@ -1,4 +1,10 @@
 package com.checkers;
 
-public class Application {
+class Application {
+    public static void main(String[] args) {
+        Board board = new Board();
+        board.rowAdder();
+
+    }
 }
+

@@ -1,4 +1,8 @@
 package com.checkers;
 
-public class None {
+public class None extends Figure {
+
+    public None(String color) {
+        super(color);
+    }
 }
