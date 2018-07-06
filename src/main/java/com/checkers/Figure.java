@@ -1,7 +1,7 @@
 package com.checkers;
 
 public class Figure {
-    private String color;
+    public String color;
     public Figure(String color) {
         this.color = color;
     }

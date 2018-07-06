@@ -18,8 +18,8 @@ public class Board {
         rows.get(row).figureChanger(col,figure);
     }
 
-    @Override
-    public String toString(){
-        return null;
-    }
+//    @Override
+//    public String toString(){
+//        return null;
+//    }
 }
