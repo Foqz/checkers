@@ -17,9 +17,12 @@ public class Board {
     public void setFigure(int row, int col, Figure figure) {
         rows.get(row).figureChanger(col,figure);
     }
-
-//    @Override
-//    public String toString(){
-//        return null;
+//    @Override   <- testing string
+//    public String toString() {
+//        String output = "cccc";
+//        for (int n = 0; n < 8; n++) {
+//            output += rows.get(n).columns + "   ";
+//        }
+//        return output;
 //    }
 }

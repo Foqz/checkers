@@ -2,17 +2,20 @@ package com.checkers;
 
 class Application {
     public static void main(String[] args) {
-        None none = new None("");
-        Pawn pawnW = new Pawn("wQ");
-        Queen queenW = new Queen("wP");
-        Pawn pawnB = new Pawn("bP");
-        Queen queenB = new Queen("bQ");
-
         Board board = new Board();
         board.rowAdder();
         System.out.println("Printting empty board");
+        System.out.println("-----------------------------------------");
         for(int n = 0; n<8; n++) {
-            System.out.println(board.rows.get(n).columns);
+            System.out.println("|" + board.getFigure(n,0) +"|"
+                    + board.getFigure(n,1) +"|"
+                    + board.getFigure(n,2) +"|"
+                    + board.getFigure(n,3) +"|"
+                    + board.getFigure(n,4) +"|"
+                    + board.getFigure(n,5) +"|"
+                    + board.getFigure(n,6) +"|"
+                    + board.getFigure(n,7) +"|");
+            System.out.println("-----------------------------------------");
         }
         System.out.println("Adding some figures....");
         board.setFigure(1,1,new Pawn("b"));
@@ -24,8 +27,17 @@ class Application {
         board.setFigure(6,7,new Queen("w"));
         board.setFigure(2,7,new Queen("w"));
         System.out.println("Printing new board");
+        System.out.println("-----------------------------------------");
         for(int n = 0; n<8; n++) {
-            System.out.println(board.rows.get(n).columns);
+            System.out.println("|" + board.getFigure(n,0) +"|"
+                    + board.getFigure(n,1) +"|"
+                    + board.getFigure(n,2) +"|"
+                    + board.getFigure(n,3) +"|"
+                    + board.getFigure(n,4) +"|"
+                    + board.getFigure(n,5) +"|"
+                    + board.getFigure(n,6) +"|"
+                    + board.getFigure(n,7) +"|");
+            System.out.println("-----------------------------------------");
         }
         System.out.println("Printing field B2");
         Figure figure;

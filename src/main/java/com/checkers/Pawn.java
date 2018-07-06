@@ -7,6 +7,6 @@ public class Pawn extends Figure{
     }
     @Override
     public String toString(){
-        return "|P" + this.color + "|";
+        return " P" + this.color + " ";
     }
 }
